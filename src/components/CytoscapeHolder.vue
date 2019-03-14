@@ -86,9 +86,9 @@ export default {
         })
         .selector("edge")
         .css({
-          "curve-style": "bezier",
-          "target-arrow-shape": "triangle",
-          "target-arrow-color": "#ccc",
+          // "curve-style": "bezier",
+          // "target-arrow-shape": "triangle",
+          // "target-arrow-color": "#ccc",
           "line-color": "#ccc",
           width: 1
         })

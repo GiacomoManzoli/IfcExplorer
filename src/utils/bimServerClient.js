@@ -3,7 +3,7 @@ import { BimServerApiPromise, BimServerApiWebSocket, Model } from '../libs/bimse
 import BimServerClient from '../libs/bimserverapi.bundle.00136';
 //console.log(BimServerClient, BimServerApiPromise, BimServerApiWebSocket, Model);
 
-const BIM_SERVER_ADDRESS = 'http://localhost:8888';
+const BIM_SERVER_ADDRESS = 'http://localhost:8082';
 const USERNAME = 'bim@888sp.it';
 const PASSWORD = 'bim';
 

@@ -48,7 +48,7 @@ import CytoscapeHolder from "./components/CytoscapeHolder";
 import ProjectInfo from "./components/ProjectInfo";
 import ObjectDetail from "./components/ObjectDetail";
 
-const BIM_SERVER_ADDRESS = "http://localhost:8888";
+const BIM_SERVER_ADDRESS = "http://localhost:8082";
 const USERNAME = "bim@888sp.it";
 const PASSWORD = "bim";
 
@@ -56,7 +56,7 @@ import bimServerApi from "./utils/bimServerClient";
 
 import Dummy from './model/DummyObject'
 
-let x = new Dummy("12");
+let x = new Dummy("13");
 console.log(x);
 
 
@@ -168,6 +168,7 @@ export default {
     let othis = this;
     console.group("api-init");
     bimServerApi.init(function(client, serverInfo) {
+      console.log(arguments);
       // console.log(client === bimServerApi); -> true!!
       let serverState = serverInfo.serverState;
       let serverVersion = serverInfo.version.fullString;
@@ -190,7 +191,7 @@ export default {
             );
             //console.log(othis.projects);
             // TODO: change me
-            othis.currentProject = othis.projects[0];
+            othis.currentProject = othis.projects[1];
           }
         );
       });
